@@ -1,15 +1,39 @@
-# Linux-Privilege-Escalation-Automation-Toolkit
+# Linux Privilege Escalation Automation Toolkit
 
-Linux Privilege Escalation Automation Toolkit that performs quick system enumeration to identify potential privilege escalation vectors. It checks SUID binaries, writable files, cron jobs, sudo privileges, services, and kernel versions, presenting results in a clean and structured format for easier analysis.
+## 📌 Introduction
+The Linux Privilege Escalation Automation Toolkit is a lightweight enumeration tool developed to identify potential privilege escalation vectors in Linux systems. It automates common checks performed during penetration testing and security assessments.
 
-## Features
-- SUID binary detection
-- Writable file discovery
-- Cron job enumeration
-- Sudo permission checks
-- Running services overview
-- Kernel version detection
+## 🎯 Objective
+The main objective of this project is to:
+- Automate privilege escalation checks
+- Reduce manual effort during enumeration
+- Provide clean and readable output
+- Help security professionals and learners identify vulnerabilities quickly
 
-## Usage
+## ⚙️ Features
+- SUID Binary Enumeration
+- Writable File Detection
+- Cron Job Analysis
+- Sudo Permission Check
+- Running Services Enumeration
+- Kernel Version Detection
+
+## 🛠️ Technologies Used
+- Python 3
+- Linux Commands (find, ls, systemctl, uname)
+
+## 🧠 Working Principle
+The tool executes system-level commands using Python's subprocess module and collects relevant information:
+- Searches for SUID binaries 
+- Identifies writable files
+- Reads cron jobs from system files
+- Checks sudo privileges without password
+- Lists running services
+- Retrieves kernel version
+
+The results are displayed in a structured and readable format.
+
+## 🚀 Usage
 ```bash
-python3 script.py
+chmod +x script.py
+./script.py
