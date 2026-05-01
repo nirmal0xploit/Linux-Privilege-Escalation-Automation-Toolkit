@@ -12,4 +12,4 @@ Linux Privilege Escalation Automation Toolkit that performs quick system enumera
 
 ## Usage
 ```bash
-python3
+python3 script.py
